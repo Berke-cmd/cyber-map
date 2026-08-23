@@ -5,7 +5,7 @@ from typing import Set
 class CrtShCollector:
     BASE_URL = "https://crt.sh/"
 
-    def _init_(self, timeout: int = 15):
+    def __init__(self, timeout: int = 15):
         self.timeout = timeout
         self.session = requests.Session()
         self.session.headers.update({
