@@ -1,7 +1,7 @@
 import dns.resolver
 
 class DNSCollector:
-    def _init_(self, domain: str):
+    def __init__(self, domain: str):
         self.domain = domain
         self.resolver = dns.resolver.Resolver()
         self.resolver.timeout = 3.0
