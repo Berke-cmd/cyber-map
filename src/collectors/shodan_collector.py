@@ -5,7 +5,7 @@ from src.core.config import Config
 class ShodanIntelCollector:
     BASE_URL = "https://api.shodan.io"
 
-    def _init_(self, api_key: str = None):
+    def __init__(self, api_key: str = None):
         self.api_key = api_key or Config.SHODAN_API_KEY
         self.session = requests.Session()
 
