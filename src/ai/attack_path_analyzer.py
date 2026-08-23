@@ -3,7 +3,7 @@ from src.core.config import Config
 from src.core.neo4j_client import Neo4jClient
 
 class AttackPathAnalyzer:
-    def _init_(self, db: Neo4jClient):
+    def __init__(self, db: Neo4jClient):
         self.db = db
         self.client = OpenAI(api_key=Config.OPENAI_API_KEY) if Config.OPENAI_API_KEY else None
 
