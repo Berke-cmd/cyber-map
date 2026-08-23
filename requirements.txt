@@ -1,0 +1,7 @@
+neo4j==5.18.0
+dnspython==2.6.1
+requests==2.31.0
+openai==1.14.1
+pydantic==2.6.4
+python-dotenv==1.0.1
+rich==13.7.1
