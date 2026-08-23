@@ -2,7 +2,7 @@ from src.core.neo4j_client import Neo4jClient
 from typing import List, Dict, Any
 
 class GraphBuilder:
-    def _init_(self, db: Neo4jClient):
+    def __init__(self, db: Neo4jClient):
         self.db = db[span_50](start_span)[span_50](end_span)
 
     def clear_database(self):
