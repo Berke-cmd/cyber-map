@@ -99,6 +99,6 @@ def run_spectergraph(target_domain: str):
     else:
         console.print("[yellow][!] Neo4j aktif değil, OSINT yüzey tarama sonuçları yukarıda listelendi.[/yellow]")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     target = sys.argv[1] if len(sys.argv) > 1 else "example.com"
     run_spectergraph(target)
