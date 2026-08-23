@@ -31,6 +31,7 @@ def run_spectergraph(target_domain: str):
     ))
 
     db = None
+    neo4j_active = False
     try:
         db = Neo4jClient()
         builder = GraphBuilder(db)
